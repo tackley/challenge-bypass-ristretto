@@ -528,6 +528,7 @@ impl VerificationKey {
 }
 
 /// A `VerificationSignature` which can be verified given the `VerificationKey` and message
+#[derive(Debug)]
 #[cfg_attr(not(feature = "cbindgen"), repr(C))]
 pub struct VerificationSignature(GenericArray<u8, U64>);
 

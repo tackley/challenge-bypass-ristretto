@@ -1,0 +1,19 @@
+[package]
+name = "offline-processor"
+version = "0.1.0"
+edition = "2018"
+
+# See more keys and their definitions at https://doc.rust-lang.org/cargo/reference/manifest.html
+
+[dependencies]
+anyhow = "1.0"
+csv = "1.1"
+hmac = "0.10"
+serde = { version = "1.0", features = ["derive"] }
+serde_json = "1.0"
+sha2 = "0.9"
+structopt = "0.3"
+threadpool = "1.8"
+once_cell = "1.8"
+
+challenge-bypass-ristretto = { path = "../../", features = ["base64", "serde_base64"] }
